@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Data Table</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Employee Data Table</h1>
+      <div class="options">
+        <label for="numEmployees">Number of Employees:</label>
+        <input type="number" id="numEmployees" min="1" value="5">
+        <button id="generateBtn">Generate</button>
+        <button id="downloadBtnXLSX">Download Excel</button>
+        <button id="downloadBtnCSV">Download CSV</button>
+      </div>
+    </header>
+    <div class="table-container">
+      <table id="employeeTable">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Canadian SIN</th>
+          </tr>
+        </thead>
+        <tbody id="employeeData"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.0/dist/xlsx.full.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
